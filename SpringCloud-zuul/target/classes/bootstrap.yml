@@ -1,0 +1,23 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: SpringCloud-zuul
+  cloud:
+    config:
+      name: neo-config
+      profile: dev
+      discovery:
+        service-id: SpringCloud-config
+        enabled: true
+#解决zuul 转发无法携带cookie
+zuul:
+  sensitive-headers:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
