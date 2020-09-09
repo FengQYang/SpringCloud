@@ -12,6 +12,7 @@
         <module>SpringCloud-eureka</module>
         <module>SpringCloud-config</module>
         <module>SpringCloud-zuul</module>
+        <module>SpringCloud-uploadFile</module>
     </modules>
 
     <parent>
