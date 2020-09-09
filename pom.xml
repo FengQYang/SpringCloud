@@ -12,9 +12,9 @@
         <module>SpringCloud-eureka</module>
         <module>SpringCloud-config</module>
         <module>SpringCloud-zuul</module>
-        <module>SpringCloud-uploadFile</module>
+        <module>SpringCloud-background-management</module>
         <module>SpringCloud-pojo</module>
-        <module>SpringCloud-shopfind</module>
+        <module>SpringCloud-pojo</module>
     </modules>
 
     <parent>
