@@ -12,9 +12,15 @@
         <module>SpringCloud-eureka</module>
         <module>SpringCloud-config</module>
         <module>SpringCloud-zuul</module>
-        <module>SpringCloud-background-management</module>
         <module>SpringCloud-pojo</module>
-        <module>SpringCloud-pojo</module>
+        <module>SpringCloud-uploadfiles</module>
+        <module>SpringCloud-findsbook</module>
+        <module>SpringCloud-utils</module>
+        <module>SpringCloud-user</module>
+        <module>SpringCloud-shop</module>
+        <module>SpringCloud-shopcart</module>
+        <module>SpringCloud-pay</module>
+        <module>SpringCloud-email</module>
     </modules>
 
     <parent>
@@ -37,6 +43,21 @@
                 <artifactId>lombok</artifactId>
                 <version>1.16.22</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.62</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.10.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.10.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

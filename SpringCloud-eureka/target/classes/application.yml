@@ -14,3 +14,7 @@ eureka:
   server:
     #关闭自我保护机制
     enable-self-preservation: false
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: http://${spring.cloud.client.ip-address}:${server.port}

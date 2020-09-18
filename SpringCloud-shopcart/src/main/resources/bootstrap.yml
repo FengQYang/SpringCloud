@@ -1,0 +1,23 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: SpringCloud-shopcart
+  cloud:
+    config:
+      discovery:
+        service-id: SpringCloud-config
+        enabled: true
+      name: neo-config
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: http://${spring.cloud.client.ip-address}:${server.port}
+feign:
+  hystrix:
+    enabled: true

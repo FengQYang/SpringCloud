@@ -1,0 +1,28 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: SpringCloud-email
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: SpringCloud-config
+      name: neo-config
+      profile: dev
+  mail:
+    host: smtp.qq.com
+    username: 1468416647@qq.com
+    password: wnfpqkqlkpgwbacc
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/

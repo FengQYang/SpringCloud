@@ -16,4 +16,6 @@ public class Book {
     private String press;
     private String abs;
     private Integer cid;
+    private Integer price;
+    private Integer counts;
 }

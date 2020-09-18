@@ -1,0 +1,19 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: SpringCloud-findsbook
+  cloud:
+    config:
+      name: neo-config
+      profile: dev
+      discovery:
+        service-id: SpringCloud-config
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.fqy.pojo
